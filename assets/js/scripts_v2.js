@@ -1030,7 +1030,8 @@ $(document).ready(function() {
 			$('#contactform .btn-submit').html('Sending message ...');
 			$('#commentform .btn-submit').html('Sending comment ...');
 
-			var url = "/rcg/submitForm";
+			var url = "https://u6aoabqle8.execute-api.us-east-2.amazonaws.com/Stage/email";
+			//var url = "/rcg/submitForm";
 			//var url = "http://localhost:8080/rcg/submitForm"; 
 			if(document.getElementsByClassName('form-control error').length == 0){
 				$.ajax({
