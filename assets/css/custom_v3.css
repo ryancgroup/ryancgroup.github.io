@@ -1,0 +1,284 @@
+/*===================================================================================*/
+/*	CUSTOM CSS STYLES
+/*===================================================================================*/
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.wwu-services {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.wwu-index,
+.wwu-careers {
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+.wwu-benefits,
+.wwu-about-us {
+    margin-bottom: 90px;
+}
+
+.wwu-padding {
+    padding: 60px 0 60px;
+}
+
+.owl-carousel.height-md {
+    height: 440px;
+}
+
+.service-columns {
+    margin-top: 80px;
+}
+
+.services-hr {
+    margin: 30px 15px;
+}
+
+.services-groups {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#backToJobDescription a {
+    margin-left: 45px;
+    color: #2C3E52;
+}
+
+.job-table {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    #jobSearchContainer {
+        padding: 0;
+    }
+    #backToJobDescription a {
+        margin-left: 33px;
+    }
+    .wwu-services {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .wwu-index {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .wwu-margins {
+        margin: 30px 0 60px;
+    }
+    .wwu-careers,
+    .wwu-benefits,
+    .wwu-about-us {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .wwu-padding {
+        padding: 30px 0 30px;
+    }
+    .services-block {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .owl-carousel.height-md {
+        height: 520px;
+    }
+    .service-columns {
+        margin-top: 0px;
+    }
+    .service-group-headings {
+        margin-top: 0;
+    }
+    .services-hr {
+        margin: 20px 15px;
+    }
+    .icon {
+        margin-bottom: 5px;
+    }
+    .services-icon {
+        margin-top: 50px;
+    }
+    .footer-bottom .footer-menu li {
+        padding-left: 2px;
+        padding-right: 0px;
+    }
+    .footer-bottom .footer-menu li::before {
+        padding-right: 5px;
+    }
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+#getInTouchBtn {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.glyphicon {
+    font-size: 85px;
+    color: rgb(63, 141, 191);
+}
+
+.our-services-banner {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.services-nav {
+    margin-top: 30px;
+}
+
+.services-row {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.services-block {
+    padding: 30px 40px;
+}
+
+.gray-box {
+    background-color: rgb(245, 247, 250);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .word-wrap-fix {
+        margin-top: 40px;
+    }
+    .extra-margin-medium {
+        margin-bottom: 40px;
+    }
+}
+
+.intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 45.25%;
+}
+   
+.intrinsic-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .intrinsic-container {
+        padding-bottom: 105%;
+        min-height: 1450px;
+    }
+    .rms-tracker-container {
+        min-height: 530px;
+    }
+}
+
+.careers-header {
+    padding-left: 8px;
+}
+  
+.search-glyph {
+    font-size: 25px;
+    top: 7px;
+    left: 10px;
+    margin-right: 12px;
+}
+
+.table-location-col {
+    text-align: right;
+}
+
+#thLocation {
+    padding-right: 16px;
+}
+
+#applyNowModal {
+    height: 75%
+}
+
+@media (max-width: 767px) {
+    .table-location-col {
+    }
+    #thLocation {
+        padding-right: 5px;
+    }
+}
+
+#jobDetailsContainer {
+    min-height: 590px;
+}
+
+.rms-tracker-container {
+    min-height: 720px;
+}
+
+#applyNowModal .modal-header {
+    border: none;
+}
+
+#applyNowModal .close {
+    opacity: 0.7;
+}
+
+#applyNowModal .form-control {
+    font-size: 16px;
+}
+
+#system-search {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#jobSearchTable th {
+    color: white;
+    background-color: #3F8DBF;
+}
+
+#fullDescription {
+    margin-bottom: 5px;
+}
+
+.sort-icon {
+    margin-left: 7px;
+}
+
+/* Styling for Job Search Table on careers page */
+@media (max-width: 767px) {
+    .table > tbody tr td {
+        font-size: 15px;
+        min-width: 90px;
+        max-width: 160px;
+    }
+    #thJobId {
+        min-width: 105px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .table > tbody tr td {
+        font-size: 18px;
+        min-width: 130px;
+        max-width: 185px;
+	}
+}
+
+@media (min-width: 992px) {
+    .table > tbody tr td {
+        font-size: 18px;
+        min-width: 180px;
+        max-width: 220px;
+	}
+}
