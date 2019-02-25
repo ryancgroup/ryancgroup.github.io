@@ -19,7 +19,7 @@ $(document).ready(function() {
     var pathname = window.location.href;
 
     if (pathname.indexOf('careers') > -1) {
-        var ajaxUrl = window.location.hostname ? 'rcg/jobDetailList' : 'http://localhost:8080/rcg/jobDetailList';
+        var ajaxUrl = window.location.hostname ? 'http://www.ryancgroup.com/rcg/jobDetailList' : 'http://localhost:8080/rcg/jobDetailList';
         $.ajax({
             url: ajaxUrl,
             method: 'GET',
