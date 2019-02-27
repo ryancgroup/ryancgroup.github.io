@@ -89,7 +89,7 @@ $(document).ready(function() {
         var hostname = window.location.hostname ? window.location.hostname : 'http://localhost:8080';
         var urlSearch = window.location.search;
         var jobcode = urlSearch ? urlSearch.split('=')[1] : '1000';
-        var ajaxUrl = window.location.hostname ? "/rcg/jobDetail?jobId=" : "http://localhost:8080/rcg/jobDetail?jobId=";
+        var ajaxUrl = window.location.hostname ? "https://gnjin6lwhk.execute-api.us-east-2.amazonaws.com/Stage/jobDetail?jobId=" : "http://localhost:8080/rcg/jobDetail?jobId=";
         $.ajax({
             url: ajaxUrl + jobcode,
             method: 'GET',
