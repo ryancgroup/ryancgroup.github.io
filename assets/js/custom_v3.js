@@ -109,11 +109,11 @@ $(document).ready(function() {
             });
 
         // add jobId to Apply Now button href
-        var updateHostName = 'http://www.ryancgroup.com';
+        var updateHostName = 'https://www.ryancgroup.com';
         if (!window.location.hostname || window.location.hostname.indexOf('test.ryancgroup.com') > -1){
-            updateHostName = 'http://test.ryancgroup.com';
+            updateHostName = 'https://test.ryancgroup.com';
         }
-        var updatedHref = "http://usportal.tracker-rms.com/theryanconsultinggroup/portal/register.asp?urlRedirect=" + updateHostName + "/register.html" + urlSearch;
+        var updatedHref = "https://usportal.tracker-rms.com/theryanconsultinggroup/portal/register.asp?urlRedirect=" + updateHostName + "/register.html" + urlSearch;
         $('#applyNowButton').attr('href', updatedHref);
     }
 
