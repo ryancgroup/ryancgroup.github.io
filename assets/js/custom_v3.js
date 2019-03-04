@@ -3,6 +3,13 @@
 /*===================================================================================*/
 
 $(document).ready(function() {
+    // add spinner event to AJAX start/stop
+    var $body = $("body");
+    $(document).on({
+        ajaxStart: function() { $body.addClass("loading"); },
+        ajaxStop: function() { $body.removeClass("loading"); }    
+    });
+
     function addJobDataToPage(data) {
         var title = data.jobTitle ? data.jobTitle : '';
         var location = data.location || '';
@@ -19,7 +26,7 @@ $(document).ready(function() {
     var pathname = window.location.href;
 
     if (pathname.indexOf('careers') > -1) {
-        var ajaxUrl = window.location.hostname ? 'https://nx1kkbgfua.execute-api.us-east-2.amazonaws.com/Stage/jobDetailList' : 'http://localhost:8080/rcg/jobDetailList';
+        var ajaxUrl = 'https://nx1kkbgfua.execute-api.us-east-2.amazonaws.com/Stage/jobDetailList';
         $.ajax({
             url: ajaxUrl,
             method: 'GET',
@@ -86,10 +93,9 @@ $(document).ready(function() {
 
 
     if (pathname.indexOf('job-details') > -1) {
-        var hostname = window.location.hostname ? window.location.hostname : 'http://localhost:8080';
         var urlSearch = window.location.search;
         var jobcode = urlSearch ? urlSearch.split('=')[1] : '1000';
-        var ajaxUrl = window.location.hostname ? "https://gnjin6lwhk.execute-api.us-east-2.amazonaws.com/Stage/jobDetail?jobId=" : "http://localhost:8080/rcg/jobDetail?jobId=";
+        var ajaxUrl = "https://gnjin6lwhk.execute-api.us-east-2.amazonaws.com/Stage/jobDetail?jobId=";
         $.ajax({
             url: ajaxUrl + jobcode,
             method: 'GET',
