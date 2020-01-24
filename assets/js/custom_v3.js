@@ -116,7 +116,7 @@ $(document).ready(function() {
 
         // add jobId to Apply Now button href
         var updateHostName = 'https://ryancgroup.com';
-        var updatedHref = "https://evoportalus1.tracker-rms.com/TheRyanConsultingGroup/apply?urlRedirect=" + updateHostName + "/register.html" + urlSearch;
+        var updatedHref = "https://evoportalus1.tracker-rms.com/TheRyanConsultingGroup/apply? + urlSearch;
         $('#applyNowButton').attr('href', updatedHref);
     }
 
